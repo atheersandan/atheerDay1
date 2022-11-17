@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+/* quiz 1 */
+
+        System.out.println("Q1:Write a program that takes a numerical value from the user, then prints whether the value is positive, negative, or 0.");
+        Scanner n = new Scanner(System.in);
+        System.out.println("choose a number!");
+        int num = n.nextInt();
+
+        if(num==0){
+            System.out.println("its zero!");
+        }
+        else if (num>=1){
+            System.out.println("its positive!");
+        }
+        else {
+            System.out.println("its negative!");
+        }n.nextLine();
+
+/* quiz 2 */
+        System.out.println("Q2:Print the numbers from 1 to 50, with writing an expression if the number is even or odd next to the number.");
+        for(int i=1; i<=50;i++){
+            System.out.println(i);
+            if(i%2==0){
+                System.out.println(i+" "+"even");
+            }
+            else{
+                System.out.println(i+" "+"odd");
+            }
+        }
+    }
