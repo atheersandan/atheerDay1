@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter grade:");
+        int grade = s.nextInt();
+        check(grade);
+        System.out.println("hi");
+
+    }
+
+    public static void check(int num) {
+        try {
+            if (num > 100) {
+                throw new Exception("no it should be less than 100!!");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
