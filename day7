@@ -1,0 +1,67 @@
+// first
+public class Employee {
+
+    int emp_ID;
+    String name;
+    String depart;
+    double salary;
+    double bonus;
+    boolean resident;
+// second
+    public Employee(){
+
+    }
+
+    public Employee(int emp_ID,String name){
+        this.emp_ID=emp_ID;
+        this.name=name;
+
+    }
+
+    public Employee(int emp_ID,String name,boolean resident){
+        this.emp_ID=emp_ID;
+        this.name=name;
+        this.resident=resident;
+
+    }
+
+    public Employee(int emp_ID,String name,String depart,double salary,double bonus,boolean resident){
+        this.emp_ID=emp_ID;
+        this.name=name;
+        this.depart=depart;
+        this.salary=salary;
+        this.bonus=bonus;
+        this.resident=resident;
+
+    }
+// third
+    public void setSalary(double salary){
+        this.salary=salary;
+
+    }
+    public void setSalary(double salary,double bonus){
+        this.salary=salary;
+        this.bonus=bonus;
+
+    }
+
+    public void setDepart(String depart){
+        this.depart=depart;
+
+    }
+
+    public void setEmp_ID(int emp_ID){
+        this.emp_ID=emp_ID;
+
+    }
+
+    public void print_Emp_Dara(){
+        System.out.println("Employee ID is : "+emp_ID);
+        System.out.println("Employee name is : "+name);
+        System.out.println("Employee Department  is : "+depart);
+        System.out.println("Employee Salary is : "+salary);
+        System.out.println("Employee Bonus is : "+bonus);
+        System.out.println("Employee Resident is : "+resident);
+
+    }
+}
